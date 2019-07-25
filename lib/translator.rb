@@ -3,8 +3,13 @@ require "yaml"
 
 def load_library(path)
   # code goes here
-  result = YAML.load_file(path)
-  return result
+  file_hash = YAML.load_file(path)
+  
+  emoticon_lib = {
+    get_meaning: file_hash.keys,
+    get_emoticon: file_hash.values
+  }
+  return emoticon_lib
 end
 
 def get_japanese_emoticon(path, english_emoticon)
@@ -12,6 +17,8 @@ def get_japanese_emoticon(path, english_emoticon)
   
   emoticon_lib = load_library(path)
   result = ""
+  
+  
   
   emoticon_lib.each do |(key, values)| 
     if values.include?(english_emoticon)
