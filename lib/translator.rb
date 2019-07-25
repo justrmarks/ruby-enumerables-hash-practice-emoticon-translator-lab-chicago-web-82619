@@ -30,5 +30,7 @@ end
 def get_english_meaning(path, emoticon)
   # code goes here
   emoticon_lib = load_library(path)
+  result
   
+  emoticon_lib.each |
 end
