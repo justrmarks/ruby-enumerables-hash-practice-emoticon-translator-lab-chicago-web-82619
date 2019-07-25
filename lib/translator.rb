@@ -20,7 +20,8 @@ def get_japanese_emoticon(path, english_emoticon)
     
   end
   
-  if 
+  if result == ""
+    
   
 end
 
