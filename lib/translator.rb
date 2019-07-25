@@ -11,7 +11,7 @@ def get_japanese_emoticon(path, english_emoticon)
   # code goes here
   
   emoticon_lib = load_library(path)
-  result = ""
+  result = "Sorry, that emoticon was not found"
   
   emoticon_lib.each do |(key, values)| 
     if values.include?(english_emoticon)
