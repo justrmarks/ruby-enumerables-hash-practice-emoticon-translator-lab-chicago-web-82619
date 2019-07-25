@@ -32,7 +32,14 @@ def get_english_meaning(path, emoticon)
   emoticon_lib = load_library(path)
   result = ""
   
-  emoticon_lib.each do |pair|  
+  emoticon_lib.each do |pair| 
+    if pair.values[1] == emoticon
+      result = pair.keys[0].to_s
+    end
     
     end
+    
+    if result == ""
+      result = 
+      
 end
