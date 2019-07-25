@@ -29,10 +29,10 @@ def get_japanese_emoticon(path, english_emoticon)
   
   emoticon_lib.each do |(key, values)| 
     if emoticon_lib[:get_emoticon][english_emoticon]
-      return emoticon_lib[:get_emoticon][english_emoticon]
+      result = emoticon_lib[:get_emoticon][english_emoticon]
     end
     
-  end
+  
   
   if result == ""
     result = "Sorry, that emoticon was not found"
