@@ -28,8 +28,8 @@ def get_japanese_emoticon(path, english_emoticon)
   
   
   emoticon_lib.each do |(key, values)| 
-    if values.include?(english_emoticon)
-      result = values[1]
+    if emoticon_lib[:get_emoticon][english_emoticon]
+      return emoticon_lib[:get_emoticon][english_emoticon]
     end
     
   end
