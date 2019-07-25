@@ -32,6 +32,8 @@ def get_japanese_emoticon(path, english_emoticon)
       result = emoticon_lib[:get_emoticon][english_emoticon]
     end
     
+  end
+    
   
   
   if result == ""
