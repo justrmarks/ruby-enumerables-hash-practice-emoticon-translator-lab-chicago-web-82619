@@ -11,8 +11,8 @@ def load_library(path)
   
   file_hash.each do |(key, values)| 
     
-    emoticon_lib[get_meaning][values[1] = key
-    emoticon_lib[get_emoticon][values[0] = values[1]
+    emoticon_lib[get_meaning][values[1]] = key
+    emoticon_lib[get_emoticon][values[0]] = values[1]
     
   end
   
